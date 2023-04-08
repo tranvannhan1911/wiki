@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2020-09-26 15:53:44.849581",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "content_section",
+  "title",
+  "column_break_2",
+  "route",
+  "published",
+  "allow_guest",
+  "section_break_4",
+  "content",
+  "meta_tags_section",
+  "meta_description",
+  "meta_image",
+  "meta_keywords"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "default": "No Content",
+   "description": "It is recommended that you start your first heading with h2, as the title will be the h1.",
+   "fieldname": "content",
+   "fieldtype": "Code",
+   "in_preview": 1,
+   "label": "Content",
+   "options": "Markdown",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Route",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "content_section",
+   "fieldtype": "Section Break",
+   "label": "Title & Content"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_guest",
+   "fieldtype": "Check",
+   "label": "Allow Guest"
+  },
+  {
+   "fieldname": "meta_tags_section",
+   "fieldtype": "Section Break",
+   "label": "Meta Tags"
+  },
+  {
+   "fieldname": "meta_description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "description": "Ideally should be 1200 x 630 pixels.",
+   "fieldname": "meta_image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "description": "Should be a comma separated list",
+   "fieldname": "meta_keywords",
+   "fieldtype": "Small Text",
+   "label": "Keywords"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [
+  {
+   "group": "Linked Documents",
+   "link_doctype": "Wiki Page Revision",
+   "link_fieldname": "wiki_page"
+  },
+  {
+   "group": "Linked Documents",
+   "link_doctype": "Wiki Page Patch",
+   "link_fieldname": "wiki_page"
+  }
+ ],
+ "modified": "2022-09-24 15:09:35.710833",
+ "modified_by": "Administrator",
+ "module": "Wiki",
+ "name": "Wiki Page",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Wiki Approver",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1,
+ "website_search_field": "content"
+}
